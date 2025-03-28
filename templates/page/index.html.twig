@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block body %}
+{% for trip in trips %}
+    {% include 'trip/trip.html.twig' %}
+{% endfor %}
+{% endblock %}
